@@ -1,0 +1,43 @@
+@model zain.Models.job
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body style="background-color:black">
+
+
+    <div>
+        <br />
+
+        <form method="get" action="/Home/add" style="max-width:500px;margin:auto" name=Addjob class="Per1">
+
+
+
+            <br />
+            <div class="input-container">
+
+                <input type="text" class="input-field empty" id="iconified" placeholder=" &#xf0f2             Type Job Type " name="type" onfocusout="typevalid()">
+            </div>
+            <br />
+
+
+            <div class="input-container">
+                <input type="text" class="input-field empty" id="iconified" placeholder=" &#xf0f2             Type Job Title " name="title" onfocusout="titlevalid()">
+
+            </div>
+            <br />
+
+            <div class="input-container">
+                <input type="text" class="input-field empty" id="iconified" placeholder=" &#xf015             Type Company Name " name="company" onfocusout="companyvalid()">
+
+            </div>
+            <br />
+
+            <div class="input-container">
+                <input type="text" class="input-field empty" id="iconified" placeholder=" &#xf041           Type Location " name="location" onfocusout="locationvalid()">
+            </div>
+
+            <br>
+            <button type="submit" class="btn1">Add_Job</button>
+        </form>
+    </div>
+    <script src="~/Scripts/Add.js"></script>
+</body>

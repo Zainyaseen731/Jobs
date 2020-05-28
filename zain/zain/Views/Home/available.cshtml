@@ -1,0 +1,28 @@
+﻿@model zain.Models.job
+@{
+    ViewBag.Title = "available";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <body style="background-color:black">
+        <h2 style="color:white">These are the avalable that we have !</h2>
+        <br>
+
+        <form action="/Home/jobs" class="Per">
+            <h1 style="color:black">Here you select the type of jobs!</h1>
+            <br />
+            <br />
+            <select name="cars" id="cars" style="background-color:black;color:white;border: none;border-radius: 15px;height:30px;width:170px;box-shadow: 0 4px 4px rgb(139, 130, 130);">
+                @foreach (string item in ViewBag.data1)
+                {
+                    <option style="color:white" value="@item">@item</option>
+                }
+
+            </select>
+            <br>
+            <br>
+            <br>
+
+
+            <input style="background-color: black; color: white" name="submit" type="submit" id="submit" value="Search" class="btn" onclick=action />
+        </form>
+        </body>
